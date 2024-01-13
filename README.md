@@ -8,7 +8,7 @@
 Ensure that you have 'cargo-generate' installed: `cargo install cargo-generate`
 
 Then, to use this template, run:
-`cargo generate diversable/start-trunk`
+`cargo generate --git diversable/start-trunk`
 
 To run:
 `trunk serve --port 3000 --open`
