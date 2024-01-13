@@ -13,4 +13,6 @@ Then, to use this template, run:
 To run:
 `trunk serve --port 3000 --open`
 
+---
+
 To do...
