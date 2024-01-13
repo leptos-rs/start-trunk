@@ -1,10 +1,16 @@
+use leptos::html::base;
 use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
+use web_sys::Document;
+use web_sys::Node;
+
+// const URI: String = document_uri().unwrap();
 
 /// A router which renders the homepage and handles 404's
 #[component]
 fn App() -> impl IntoView {
+    let home_base_url = base().to_string();
     // Provides context that manages stylesheets, titles, meta tags, etc.
     provide_meta_context();
     view! {
@@ -14,7 +20,8 @@ fn App() -> impl IntoView {
 
         <Router>
             <Routes>
-                <Route path="" view=Home /> />
+                <Route path="/" view=Home />
+                <Route path=home_base_url view=Home />
                 <Route path="/*" view=|| view! { <h1>"Uh oh!" <br/> "We couldn't find that page!"</h1>  } />
             </Routes>
         </Router>

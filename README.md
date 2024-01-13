@@ -5,6 +5,11 @@
 
 # Leptos Client-Side Rendered App - Starter Template
 
+Ensure that you have 'cargo-generate' installed: `cargo install cargo-generate`
+
+Then, to use this template, run:
+`cargo generate --git https://github.com/diversable/start-trunk`
+
 To run:
 `trunk serve --port 3000 --open`
 
