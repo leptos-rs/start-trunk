@@ -10,4 +10,4 @@ authors = ["{{authors}}"]
 leptos = { version = "0.5.4", features = ["csr", "nightly"] }
 leptos_meta = { version = "0.5.4", features = ["nightly", "csr"] }
 leptos_router = { version = "0.5.4", features = ["csr", "nightly"] }
-web-sys = { version = "0.3.67", features = ["Document", "Window"] }
+# web-sys = { version = "0.3.67", features = ["Document", "Window"] }
