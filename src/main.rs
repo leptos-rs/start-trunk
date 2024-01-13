@@ -1,8 +1,22 @@
 use leptos::*;
+use leptos_router::*;
 
 #[component]
-fn App(increment: i32) -> impl IntoView {
+fn App() -> impl IntoView {
+    view! {
+        <Router>
+            <Routes>
+                <Route path="/" view=Home /> />
+                <Route path="/*any" view=|| view! { <h1>"Uh oh!" <br/> "We couldn't find that page!"</h1>  } />
+            </Routes>
+        </Router>
+    }
+}
+
+#[component]
+fn Home() -> impl IntoView {
     let (count, set_count) = create_signal(0);
+    let increment = 1;
 
     view! {
         <div class="container">
@@ -31,7 +45,7 @@ fn App(increment: i32) -> impl IntoView {
 fn main() {
     mount_to_body(|| {
         view! {
-            <App increment=5 />
+            <App />
         }
     })
 }

@@ -14,7 +14,7 @@ body {
   text-align: center;
 }
 
-div {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -28,6 +28,8 @@ h4,
 h5,
 h6 {
   text-align: center;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 p,
