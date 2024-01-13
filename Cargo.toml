@@ -1,5 +1,6 @@
 [package]
-name = "start-trunk"
+name = "leptos-start-trunk"
+# name = "{{project-name}}"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,4 +8,5 @@ edition = "2021"
 
 [dependencies]
 leptos = { version = "0.5.4", features = ["csr", "nightly"] }
+leptos_meta = { version = "0.5.4", features = ["nightly", "csr"] }
 leptos_router = { version = "0.5.4", features = ["csr", "nightly"] }

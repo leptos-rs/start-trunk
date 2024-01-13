@@ -1,10 +1,17 @@
 use leptos::*;
+use leptos_meta::*;
 use leptos_router::*;
 
 /// A router which renders the homepage and handles 404's
 #[component]
 fn App() -> impl IntoView {
+    // Provides context that manages stylesheets, titles, meta tags, etc.
+    provide_meta_context();
     view! {
+
+        // sets the document title
+        <Title text="Welcome to Leptos CSR"/>
+
         <Router>
             <Routes>
                 <Route path="" view=Home /> />

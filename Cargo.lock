@@ -691,6 +691,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "leptos-start-trunk"
+version = "0.1.0"
+dependencies = [
+ "leptos",
+ "leptos_meta",
+ "leptos_router",
+]
+
+[[package]]
 name = "leptos_config"
 version = "0.5.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -772,6 +781,20 @@ dependencies = [
  "syn 2.0.41",
  "tracing",
  "uuid",
+]
+
+[[package]]
+name = "leptos_meta"
+version = "0.5.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "983bbf829598d275b01e96bd9fca71e4739dd7b9fdf69cb8898b30ebfb124332"
+dependencies = [
+ "cfg-if",
+ "indexmap",
+ "leptos",
+ "tracing",
+ "wasm-bindgen",
+ "web-sys",
 ]
 
 [[package]]
@@ -1504,14 +1527,6 @@ checksum = "7b5fac59a5cb5dd637972e5fca70daf0523c9067fcdc4842f053dae04a18f8e9"
 dependencies = [
  "libc",
  "windows-sys",
-]
-
-[[package]]
-name = "start-trunk"
-version = "0.1.0"
-dependencies = [
- "leptos",
- "leptos_router",
 ]
 
 [[package]]
