@@ -20,7 +20,7 @@ fn App() -> impl IntoView {
 
         <Router>
             <Routes>
-                <Route path="/" view=Home />
+                // <Route path="/" view=Home />
                 <Route path=home_base_url view=Home />
                 <Route path="/*" view=|| view! { <h1>"Uh oh!" <br/> "We couldn't find that page!"</h1>  } />
             </Routes>
