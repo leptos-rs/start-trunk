@@ -7,7 +7,7 @@ fn App() -> impl IntoView {
     view! {
         <Router>
             <Routes>
-                <Route path="/" view=Home /> />
+                <Route path="" view=Home /> />
                 <Route path="/*" view=|| view! { <h1>"Uh oh!" <br/> "We couldn't find that page!"</h1>  } />
             </Routes>
         </Router>
