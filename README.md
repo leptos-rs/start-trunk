@@ -3,19 +3,23 @@
     <img src="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_RGB.svg" alt="Leptos Logo">
 </picture>
 
-# Leptos Client-Side Rendered App - Starter Template
+# Leptos Client-Side Rendered (CSR) App - Starter Template
 
-Ensure that you have 'cargo-generate' installed: `cargo install cargo-generate`
+Ensure that you have 'cargo-generate' installed:
+
+`cargo install cargo-generate`
+
 
 Then, to use this template, run:
+
 `cargo generate diversable/start-trunk`
 
-To run:
+
+To run / develop:
+
 `trunk serve --port 3000 --open`
 
 
 To build:
-`trunk build --release`
----
 
-To do...
+`trunk build --release`
