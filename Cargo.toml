@@ -7,7 +7,13 @@ authors = ["{{authors}}"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-leptos = { version = "0.5.4", features = ["csr", "nightly"] }
-leptos_meta = { version = "0.5.4", features = ["nightly", "csr"] }
-leptos_router = { version = "0.5.4", features = ["csr", "nightly"] }
-# web-sys = { version = "0.3.67", features = ["Document", "Window"] }
+leptos = { version = "0.5", features = ["csr", "nightly"] }
+leptos_meta = { version = "0.5", features = ["csr", "nightly"] }
+leptos_router = { version = "0.5", features = ["csr", "nightly"] }
+# web-sys = { version = "0.3", features = ["Document", "Window"] }
+
+[profile.release]
+opt-level = 'z'
+lto = true
+codegen-units = 1
+panic = "abort"
