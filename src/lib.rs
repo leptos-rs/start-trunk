@@ -2,9 +2,9 @@ use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
 
-pub mod app;
+pub mod home;
 pub mod not_found;
-use crate::app::Home;
+use crate::home::Home;
 use crate::not_found::NotFound;
 
 /// A router which renders the homepage and handles 404's
@@ -19,7 +19,7 @@ pub fn App() -> impl IntoView {
 
         <Router>
             <Routes>
-                <Route path="/" view=Home />
+                <Route path="/" view=App />
                 <Route path="/*" view=NotFound />
             </Routes>
         </Router>
