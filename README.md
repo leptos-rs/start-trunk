@@ -12,7 +12,7 @@ Ensure that you have 'cargo-generate' installed:
 
 Then, to use this template, run:
 
-`cargo generate leptos-community/start-csr`
+`cargo generate --git https://github.com/leptos-community/start-csr`
 
 
 To run / develop:
