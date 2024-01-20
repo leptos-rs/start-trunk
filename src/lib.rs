@@ -2,8 +2,10 @@ use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
 
-pub mod home;
-pub mod not_found;
+// Modules
+mod pages;
+
+// Top-Level pages
 use crate::pages::home::Home;
 use crate::pages::not_found::NotFound;
 
