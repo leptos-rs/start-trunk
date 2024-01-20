@@ -12,7 +12,7 @@ Ensure that you have 'cargo-generate' installed:
 
 Then, to use this template, run:
 
-`cargo generate rust-wasm-wasi/start-trunk-leptos-rs`
+`cargo generate leptos-community/start-csr`
 
 
 To run / develop:
