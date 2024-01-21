@@ -9,7 +9,7 @@ mod pages;
 use crate::pages::home::Home;
 use crate::pages::not_found::NotFound;
 
-/// A router which renders the homepage and handles 404's
+/// An app router which renders the homepage and handles 404's
 #[component]
 pub fn App() -> impl IntoView {
     // Provides context that manages stylesheets, titles, meta tags, etc.
