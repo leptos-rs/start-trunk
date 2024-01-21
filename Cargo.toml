@@ -10,7 +10,20 @@ authors = ["{{authors}}"]
 leptos = { version = "0.5", features = ["csr", "nightly"] }
 leptos_meta = { version = "0.5", features = ["csr", "nightly"] }
 leptos_router = { version = "0.5", features = ["csr", "nightly"] }
-# web-sys = { version = "0.3", features = ["Document", "Window"] }
+console_log = "1"
+log = "0.4"
+console_error_panic_hook = "0.1.7"
+
+# utils
+# strum = { version = "0.25", features = ["derive", "strum_macros"] }
+# strum_macros = "0.25"
+
+
+[dev-dependencies]
+wasm-bindgen = "0.2"
+wasm-bindgen-test = "0.3"
+web-sys = { version = "0.3", features = ["Document", "Window"] }
+
 
 [profile.release]
 opt-level = 'z'
