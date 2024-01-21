@@ -35,6 +35,7 @@ pub fn App() -> impl IntoView {
         <ErrorBoundary
             fallback=|errors| view! {
                 <h1>"Uh oh! Something went wrong!"</h1>
+
                 <p>"Errors: "</p>
                 // Render a list of errors as strings - good for development purposes
                 <ul>
