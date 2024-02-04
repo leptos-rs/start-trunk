@@ -33,7 +33,7 @@ to go to your newly created project.
 By default, this template uses Rust `nightly` and requires that you've installed the `wasm` compilation target for your toolchain.
 
 
-Sass and Tailwind are supported by the Trunk build tool, but are optional additions: [see here for more info on how to set those up with Trunk][Trunk-instructions].
+Sass and Tailwind are also supported by the Trunk build tool, but are optional additions: [see here for more info on how to set those up with Trunk][Trunk-instructions].
 
 
 If you don't have Rust nightly, you can install it with
@@ -46,6 +46,7 @@ You can add the `wasm` compilation target to rust using
 rustup target add wasm32-unknown-unknown
 ```
 
+
 ## Developing your Leptos CSR project
 
 To develop your Leptos CSR project, running
@@ -55,6 +56,7 @@ trunk serve --port 3000 --open
 ```
 
 will open your app in your default browser at `http://localhost:3000`.
+
 
 ## Deploying your Leptos CSR project
 
