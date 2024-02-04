@@ -9,7 +9,7 @@ This is a template for use with the [Leptos][Leptos] web framework using the [Tr
 
 ## Creating your repo from the template
 
-This template requires you to have 'cargo-generate' installed. You can install it with
+This template requires you to have `cargo-generate` installed. You can install it with
 
 ```sh
 cargo install cargo-generate
@@ -31,7 +31,9 @@ cd {{project-name}}
 to go to your newly created project.
 
 By default, this template uses Rust `nightly` and requires that you've installed the `wasm` compilation target for your toolchain.
-Sass and Tailwind are supported by the Trunk build tool, but are optional additions: [see here for more info on how to set those up][Trunk-instructions].
+
+
+Sass and Tailwind are supported by the Trunk build tool, but are optional additions: [see here for more info on how to set those up with Trunk][Trunk-instructions].
 
 
 If you don't have Rust nightly, you can install it with
@@ -44,9 +46,9 @@ You can add the `wasm` compilation target to rust using
 rustup target add wasm32-unknown-unknown
 ```
 
-### Developing your Leptos CSR project
+## Developing your Leptos CSR project
 
-To develop & run your Leptos CSR project, running
+To develop your Leptos CSR project, running
 
 ```sh
 trunk serve --port 3000 --open
@@ -54,7 +56,7 @@ trunk serve --port 3000 --open
 
 will open your app in your default browser at `http://localhost:3000`.
 
-### Deploying your Leptos CSR project
+## Deploying your Leptos CSR project
 
 To build a Leptos CSR app for release, use the command
 
