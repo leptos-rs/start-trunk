@@ -68,7 +68,7 @@ trunk build --release
 
 This will output the files necessary to run your app into the `dist` folder; you can then use any static site host to serve these files.
 
-For further info about hosting Leptos CSR apps, please refer to [the Leptos Book chapter on deployment available here][deploy-csr].
+For further information about hosting Leptos CSR apps, please refer to [the Leptos Book chapter on deployment available here][deploy-csr].
 
 
 [Leptos]: https://github.com/leptos-rs/leptos
