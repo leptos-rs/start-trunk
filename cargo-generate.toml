@@ -1,0 +1,8 @@
+[template]
+ignore = ["Cargo.lock"]
+
+[placeholders]
+vscode_settings = { prompt = "Generate default VS Code settings?", default = false, type = "bool" }
+
+[conditional.'vscode_settings == true']
+ignore = [".vscode"]
