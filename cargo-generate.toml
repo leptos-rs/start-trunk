@@ -2,7 +2,11 @@
 ignore = ["Cargo.lock"]
 
 [placeholders]
+default_channel = { prompt = "Use stable or nightly channel?", choices = [
+    "stable",
+    "nightly",
+], default = "stable", type = "string" }
 vscode_settings = { prompt = "Generate default VS Code settings?", default = false, type = "bool" }
 
-[conditional.'vscode_settings == true']
+[conditional.'vscode_settings == false']
 ignore = [".vscode"]
