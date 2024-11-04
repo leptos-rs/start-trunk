@@ -20,7 +20,7 @@ inject_scripts = true
 # Require Cargo.lock is up to date
 # locked = false
 # Control minification
-minify = "never" # can be one of: never, on_release, always
+# minify = "never" # can be one of: never, on_release, always
 # Allow disabling sub-resource integrity (SRI)
 # no_sri = false
 # An optional cargo profile to use
@@ -36,7 +36,7 @@ ignore = []
 # The address to serve on.
 addresses = ["127.0.0.1"]
 # The port to serve on.
-port = 8080
+port = 3000
 # Aliases to serve, typically found in an /etc/hosts file.
 # aliases = ["http://localhost.mywebsite.com"]
 # Disable the reverse DNS lookup during startup
