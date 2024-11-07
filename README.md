@@ -9,10 +9,10 @@ This is a template for use with the [Leptos][Leptos] web framework using the [Tr
 
 ## Creating your repo from the template
 
-This template requires you to have `cargo-generate` installed. You can install it with
+This template requires you to have `cargo-generate` and `trunk` installed. [`leptosfmt`](https://github.com/bram209/leptosfmt) is optional but highly recommended. You can install them with
 
 ```sh
-cargo install cargo-generate
+cargo install cargo-generate trunk leptosfmt
 ```
 
 
