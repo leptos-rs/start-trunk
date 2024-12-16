@@ -1,4 +1,4 @@
-use leptos::*;
+use leptos::prelude::*;
 
 /// 404 Not Found Page
 #[component]

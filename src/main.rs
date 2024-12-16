@@ -1,4 +1,4 @@
-use leptos::*;
+use csr::App;
 use {{crate_name}}::App;
 
 fn main() {

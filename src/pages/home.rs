@@ -1,5 +1,5 @@
 use crate::components::counter_btn::Button;
-use leptos::*;
+use leptos::prelude::*;
 
 /// Default Home Page
 #[component]
