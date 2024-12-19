@@ -1,0 +1,15 @@
+[template]
+ignore = ["Cargo.lock", "switch_nightly_stable.rhai"]
+
+[placeholders]
+default_channel = { prompt = "Use stable or nightly channel?", choices = [
+    "stable",
+    "nightly",
+], default = "stable", type = "string" }
+vscode_settings = { prompt = "Generate default VS Code settings?", default = false, type = "bool" }
+
+[conditional.'vscode_settings == false']
+ignore = [".vscode"]
+
+[hooks]
+pre = ["switch_nightly_stable.rhai"]
