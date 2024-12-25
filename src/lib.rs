@@ -27,7 +27,7 @@ pub fn App() -> impl IntoView {
         <Meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <Router>
-            <Routes fallback=|| view! { <NotFound /> }>
+            <Routes fallback=NotFound>
                 <Route path=path!("/") view=Home />
             </Routes>
         </Router>
