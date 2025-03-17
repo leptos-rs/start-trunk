@@ -1,5 +1,6 @@
 [template]
 ignore = ["Cargo.lock", "switch_nightly_stable.rhai"]
+exclude = ["public/favicon.ico"]
 
 [placeholders]
 default_channel = { prompt = "Use stable or nightly channel?", choices = [
