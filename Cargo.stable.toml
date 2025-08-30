@@ -24,6 +24,15 @@ wasm-bindgen = "0.2"
 wasm-bindgen-test = "0.3"
 web-sys = { version = "0.3", features = ["Document", "Window"] }
 
+[profile.dev]
+incremental = true
+opt-level = 0
+debug = 1          # Reduce debug info
+lto = false
+
+[profile.dev.package."*"]
+opt-level = 3 # optimize dependencies aggressively
+debug = 1     # we don’t need much debug info for dependencies
 
 [profile.release]
 opt-level = 'z'
