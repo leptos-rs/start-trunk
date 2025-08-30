@@ -87,7 +87,7 @@ cargo = false
 # Proxies are optional, and default to `None`.
 # Proxies are only run as part of the `trunk serve` command.
 
-[[proxy]]
+# [[proxy]]
 # This WebSocket proxy example has a backend and ws field. This example will listen for
 # WebSocket connections at `/api/ws` and proxy them to `ws://localhost:9000/api/ws`.
 # backend = "ws://localhost:9000/api/ws"
@@ -98,7 +98,7 @@ cargo = false
 # Hooks are optional, and default to `None`.
 # Hooks are executed as part of Trunk's main build pipeline, no matter how it is run.
 
-[[hooks]]
+# [[hooks]]
 # This hook example shows all the current available fields. It will execute the equivalent of
 # typing "echo Hello Trunk!" right at the start of the build process (even before the HTML file
 # is read). By default, the command is spawned directly and no shell is used.
