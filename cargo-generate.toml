@@ -7,10 +7,10 @@ default_channel = { prompt = "Use stable or nightly channel?", choices = [
     "stable",
     "nightly",
 ], default = "stable", type = "string" }
-vscode_settings = { prompt = "Generate default VS Code settings?", default = false, type = "bool" }
+rust_analyzer_settings = { prompt = "Override `rustfmt` with `leptosfmt`?", default = false, type = "bool" }
 
-[conditional.'vscode_settings == false']
-ignore = [".vscode"]
+[conditional.'rust_analyzer_settings == false']
+ignore = ["rust-analyzer.toml"]
 
 [hooks]
 pre = ["switch_nightly_stable.rhai"]
